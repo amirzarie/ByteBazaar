@@ -1,4 +1,4 @@
-import { getToken } from "./users-service";
+import { getJWT } from "./users-service";
 
 export async function sendRequest(url, method = "GET", payload = null) {
   const options = { method };
@@ -6,7 +6,7 @@ export async function sendRequest(url, method = "GET", payload = null) {
     options.headers = { "Content-Type": "application/json" };
     options.body = JSON.stringify(payload);
   }
-  const token = getToken();
+  const token = getJWT();
   if (token) {
     options.headers = options.headers || {};
     options.headers.Authorization = `Bearer ${token}`;
