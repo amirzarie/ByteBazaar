@@ -7,6 +7,10 @@ const itemSchema = new Schema(
       require: true,
       unique: true,
     },
+    email: {
+      type: String,
+      require: true,
+    },
     path: {
       type: String,
       require: true,
@@ -16,6 +20,15 @@ const itemSchema = new Schema(
       type: Number,
       required: true,
       default: 0,
+    },
+    position: {
+      type: [Number],
+      required: true,
+      unique: true,
+    },
+    scale: {
+      type: [Number],
+      required: true,
     },
   },
   {

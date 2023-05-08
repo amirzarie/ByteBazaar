@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import * as itemsAPI from "../../utilities/items-api";
+import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ItemDetailsPage from "../ItemDetailsPage/ItemDetailsPage";
 
 export default function NewOrderPage() {
   const [shelfItems, setShelfItems] = useState([]);
@@ -13,14 +15,15 @@ export default function NewOrderPage() {
     getItems();
   }, []);
 
-  function test() {
-    console.log("test")
-  }
-
   return (
     <>
-      <h1>NewOrderPage</h1>
-      <button onClick={test}>Shelf</button>
+      <ul>
+        {shelfItems.map((item) => (
+          <li key={item._id}>
+            <Link to={`/items/${item._id}`}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }

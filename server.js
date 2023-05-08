@@ -23,8 +23,9 @@ if (process.env.NODE_ENV === "production") {
 // Put API routes here, before the "catch all" route
 app.use(require('./config/checkToken'));
 app.use("/api/users", userRouter);
-const ensureLoggedIn = require("./config/ensureLoggedIn");
-app.use("/api/items", ensureLoggedIn, require("./routes/api/items"));
+// const ensureLoggedIn = require("./config/ensureLoggedIn");
+// app.use("/api/items", ensureLoggedIn, require("./routes/api/items"));
+app.use("/api/items", require("./routes/api/items"));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
