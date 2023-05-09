@@ -22,6 +22,7 @@ function App() {
     async function getItems() {
       const items = await itemsAPI.getAll();
       setShelfItems(items);
+      console.log(items)
     }
 
     getItems();
@@ -42,8 +43,8 @@ function App() {
             maxPolarAngle={Math.PI / 2}
             mouseButtons={{ LEFT: 0, MIDDLE: 2, RIGHT: 2 }}
             enablePan={true}
-            minDistance={8}
-            maxDistance={15}
+            minDistance={1}
+            maxDistance={19}
           />
           {shelfItems.map((item) => (
             <Item key={item._id} item={item} user={user} />

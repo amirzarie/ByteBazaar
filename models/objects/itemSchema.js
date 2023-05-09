@@ -24,10 +24,13 @@ const itemSchema = new Schema(
     position: {
       type: [Number],
       required: true,
-      unique: true,
     },
     scale: {
       type: [Number],
+      required: true,
+    },
+    description: {
+      type: String,
       required: true,
     },
   },
