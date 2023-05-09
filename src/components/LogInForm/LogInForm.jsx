@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as usersService from "../../utilities/users-service";
+import { Html } from "@react-three/drei";
 
 export default function LogInForm({ setUser }) {
   const [credentials, setCredentials] = useState({
@@ -24,29 +25,39 @@ export default function LogInForm({ setUser }) {
   }
 
   return (
-    <div>
-      <div className="form-container">
-        <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>Email</label>
-          <input
-            type="text"
-            name="email"
-            value={credentials.email}
-            onChange={handleChange}
-            required
-          />
-          <label>Password</label>
-          <input
-            type="password"
-            name="password"
-            value={credentials.password}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">LOG IN</button>
-        </form>
+    <Html>
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(10%, 140%)",
+        }}
+      >
+        <div className="form-container">
+          <form autoComplete="off" onSubmit={handleSubmit}>
+            <label style={{ color: "#D27D2D" }}>Email</label>
+            <input
+              type="text"
+              name="email"
+              value={credentials.email}
+              onChange={handleChange}
+              required
+            />
+            <label style={{ color: "#D27D2D" }}>Password</label>
+            <input
+              type="password"
+              name="password"
+              value={credentials.password}
+              onChange={handleChange}
+              required
+            />
+            <hr />
+            <button type="submit">LOG IN</button>
+          </form>
+        </div>
+        <p className="error-message">&nbsp;{error}</p>
       </div>
-      <p className="error-message">&nbsp;{error}</p>
-    </div>
+    </Html>
   );
 }

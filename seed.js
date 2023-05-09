@@ -12,7 +12,7 @@ const Item = require("./models/item");
       path: "/3ditems/gramophone.glb",
       price: 1001,
       position: [-5.7, 8, 1.8],
-      scale: [5, 5, 5],
+      scale: [4, 4, 4],
     },
     {
       name: "helmet",
