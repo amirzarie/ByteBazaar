@@ -20,8 +20,8 @@ export default function SignOutButton({ user, setUser }) {
           cursor: "pointer",
           boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
           position: "absolute",
-          top: "-45vh",
-          right: "-45vw",
+          top: "-47vh",
+          right: "-48vw",
           fontSize: "24px",
         }}
         onClick={handleSignOut}
