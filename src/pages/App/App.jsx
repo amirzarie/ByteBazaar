@@ -27,6 +27,7 @@ function App() {
       {user ? (
         <>
           <SignOutButton user={user} setUser={setUser} />
+
           <directionalLight
             color="#ffffff"
             intensity={1}
