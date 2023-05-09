@@ -10,24 +10,26 @@ export default function SignOutButton({ user, setUser }) {
 
   return (
     <Html>
-      <button
-        style={{
-          padding: "10px 20px",
-          background: "black",
-          color: "#F4BB44",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.4)",
-          position: "absolute",
-          top: "-47vh",
-          right: "-48vw",
-          fontSize: "20px",
-        }}
-        onClick={handleSignOut}
-      >
-        Sign Out
-      </button>
+      <div style={{ position: "absolute" }}>
+        <button
+          style={{
+            padding: "10px 20px",
+            background: "black",
+            color: "#F4BB44",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.4)",
+            position: "absolute",
+            top: "-47vh",
+            right: "-48vw",
+            fontSize: "20px",
+          }}
+          onClick={handleSignOut}
+        >
+          Sign Out
+        </button>
+      </div>
     </Html>
   );
 }
