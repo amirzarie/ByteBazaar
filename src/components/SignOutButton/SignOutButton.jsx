@@ -22,7 +22,7 @@ export default function SignOutButton({ user, setUser }) {
           position: "absolute",
           top: "-47vh",
           right: "-48vw",
-          fontSize: "24px",
+          fontSize: "20px",
         }}
         onClick={handleSignOut}
       >
