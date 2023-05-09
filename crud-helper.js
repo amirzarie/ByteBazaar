@@ -9,5 +9,5 @@ const Item = require("./models/item");
 // const Order = require('./models/order');
 
 // Local variables will come in handy for holding retrieved documents
-let user, item, category, order;
-let users, items, categories, orders;
+let user, item
+let users, items

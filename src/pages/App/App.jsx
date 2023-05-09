@@ -42,6 +42,8 @@ function App() {
             maxPolarAngle={Math.PI / 2}
             mouseButtons={{ LEFT: 0, MIDDLE: 2, RIGHT: 2 }}
             enablePan={true}
+            minDistance={8}
+            maxDistance={15}
           />
           {shelfItems.map((item) => (
             <Item key={item._id} item={item} user={user} />
