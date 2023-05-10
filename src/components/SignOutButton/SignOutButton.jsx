@@ -1,5 +1,4 @@
 import * as userService from "../../utilities/users-service";
-import { Html } from "@react-three/drei";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
 import robotoBold from "../3DItems/Roboto_Bold.json";
@@ -26,7 +25,7 @@ export default function SignOutButton({ user, setUser }) {
   return (
     <>
       <mesh
-        position={[1, -0.5, -5.7]}
+        position={[1, -0.65, -5.7]}
         onClick={handleSignOut}
         rotation={[0, Math.PI, 0]}
         onPointerOver={() => setIsHovered(true)}

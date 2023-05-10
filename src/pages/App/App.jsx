@@ -8,6 +8,10 @@ import Store from "../../components/3DItems/Store";
 import Item from "../../components/3DItems/3DItem";
 import SignOutButton from "../../components/SignOutButton/SignOutButton";
 
+import PaperPlane from "../../components/3DItems/Paperplane";
+import JukeBox from "../../components/3DItems/JukeBox";
+import Globe from "../../components/3DItems/Globe";
+
 function App() {
   const [user, setUser] = useState(getUser());
 
@@ -26,8 +30,11 @@ function App() {
     <>
       {user ? (
         <>
-          <SignOutButton user={user} setUser={setUser} />
+          <PaperPlane />
+          <JukeBox />
+          <Globe />
 
+          <SignOutButton user={user} setUser={setUser} />
           <directionalLight
             color="#ffffff"
             intensity={1}
@@ -45,14 +52,13 @@ function App() {
           {shelfItems.map((item) => (
             <Item key={item._id} item={item} user={user} />
           ))}
-          <Store />
         </>
       ) : (
         <>
-          <Store />
           <AuthPage setUser={setUser} />
         </>
       )}
+      <Store />
     </>
   );
 }
