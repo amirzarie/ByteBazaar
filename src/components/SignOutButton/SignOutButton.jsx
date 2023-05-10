@@ -1,7 +1,7 @@
 import * as userService from "../../utilities/users-service";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
-import robotoBold from "../3DItems/Roboto_Bold.json";
+import robotoBold from "../ThreeDItems/Roboto_Bold.json";
 import { extend } from "@react-three/fiber";
 import { useState, useRef, useEffect } from "react";
 

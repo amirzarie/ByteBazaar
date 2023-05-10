@@ -4,14 +4,14 @@ import { getUser } from "../../utilities/users-service";
 import { useState, useEffect } from "react";
 import * as itemsAPI from "../../utilities/items-api";
 import { OrbitControls } from "@react-three/drei";
-import Store from "../../components/3DItems/Store";
-import Item from "../../components/3DItems/3DItem";
+import Store from "../../components/ThreeDItems/Store";
+import Item from "../../components/ThreeDItems/3DItem";
 import SignOutButton from "../../components/SignOutButton/SignOutButton";
 
-import PaperPlane from "../../components/3DItems/Paperplane";
-import JukeBox from "../../components/3DItems/JukeBox";
-import Globe from "../../components/3DItems/Globe";
-import About from "../../components/3DItems/About";
+import PaperPlane from "../../components/ThreeDItems/Paperplane";
+import JukeBox from "../../components/ThreeDItems/JukeBox";
+import Globe from "../../components/ThreeDItems/Globe";
+import About from "../../components/ThreeDItems/About";
 
 function App() {
   const [user, setUser] = useState(getUser());
