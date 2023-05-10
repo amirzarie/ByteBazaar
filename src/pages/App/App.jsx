@@ -11,6 +11,7 @@ import SignOutButton from "../../components/SignOutButton/SignOutButton";
 import PaperPlane from "../../components/3DItems/Paperplane";
 import JukeBox from "../../components/3DItems/JukeBox";
 import Globe from "../../components/3DItems/Globe";
+import About from "../../components/3DItems/About";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -52,6 +53,7 @@ function App() {
           {shelfItems.map((item) => (
             <Item key={item._id} item={item} user={user} />
           ))}
+          <About />
         </>
       ) : (
         <>
