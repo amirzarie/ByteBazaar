@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Put API routes here, before the "catch all" route
-app.use(require('./config/checkToken'));
+app.use(require("./config/checkToken"));
 app.use("/api/users", userRouter);
 // const ensureLoggedIn = require("./config/ensureLoggedIn");
 // app.use("/api/items", ensureLoggedIn, require("./routes/api/items"));
