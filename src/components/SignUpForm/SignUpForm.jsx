@@ -53,12 +53,10 @@ export default class SignUpForm extends Component {
               onSubmit={this.handleSubmit}
               style={{ display: "flex", flexDirection: "column" }}
             >
-              <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-                Name
-              </label>
               <input
                 type="text"
                 name="name"
+                placeholder="First and last name"
                 value={this.state.name}
                 onChange={this.handleChange}
                 required
@@ -69,12 +67,11 @@ export default class SignUpForm extends Component {
                   border: "1px solid #F4BB44",
                 }}
               />
-              <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-                Email
-              </label>
+
               <input
                 type="email"
                 name="email"
+                placeholder="Email"
                 value={this.state.email}
                 onChange={this.handleChange}
                 required
@@ -85,12 +82,10 @@ export default class SignUpForm extends Component {
                   border: "1px solid #F4BB44",
                 }}
               />
-              <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-                Password
-              </label>
               <input
                 type="password"
                 name="password"
+                placeholder="Password"
                 value={this.state.password}
                 onChange={this.handleChange}
                 required
@@ -101,12 +96,11 @@ export default class SignUpForm extends Component {
                   border: "1px solid #F4BB44",
                 }}
               />
-              <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-                Confirm
-              </label>
+
               <input
                 type="password"
                 name="confirm"
+                placeholder="Confirm password"
                 value={this.state.confirm}
                 onChange={this.handleChange}
                 required

@@ -40,11 +40,9 @@ export default function LogInForm({ setUser }) {
             onSubmit={handleSubmit}
             style={{ display: "flex", flexDirection: "column" }}
           >
-            <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-              Email
-            </label>
             <input
               type="text"
+              placeholder="Email"
               name="email"
               value={credentials.email}
               onChange={handleChange}
@@ -56,12 +54,11 @@ export default function LogInForm({ setUser }) {
                 border: "1px solid #F4BB44",
               }}
             />
-            <label style={{ color: "#F4BB44", marginBottom: "10px" }}>
-              Password
-            </label>
+
             <input
               type="password"
               name="password"
+              placeholder="Password"
               value={credentials.password}
               onChange={handleChange}
               required
