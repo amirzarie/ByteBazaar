@@ -1,8 +1,10 @@
-## Byte Bazaar Welcomes You!
+# Byte Bazaar Welcomes You!
 
 Here, you'll find a 3D e-commerce store where you can purchase vintage items by contacting the owner of the items and coordinating the payment. This is currently a template and can serves as a base for a more scalable platform. Feel free to interact with the objects.
 
+<h3 align="center">
 [Byte Bazaar!](https://bytebazaar.herokuapp.com/)
+</h3>
 
 <p align="center">
 <img src="bytebazaar_gif.gif" width="700" height="400" />
