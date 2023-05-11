@@ -7,6 +7,7 @@ Here, you'll find a 3D e-commerce store where you can purchase vintage items by 
 </h3>
 
 <p align="center">
+[Byte Bazaar](https://bytebazaar.herokuapp.com/)
 <img src="bytebazaar_gif.gif" width="700" height="400" />
 </p>
 
