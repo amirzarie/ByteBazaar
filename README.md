@@ -6,8 +6,6 @@ Here, you'll find a 3D e-commerce store where you can purchase vintage items by 
 [Byte Bazaar](https://bytebazaar.herokuapp.com/)
 </p>
 
-
-[Byte Bazaar](https://bytebazaar.herokuapp.com/)
 <a align="center" href="https://bytebazaar.herokuapp.com/">Byte Bazaar!</a>
 <p align="center">
 <img src="bytebazaar_gif.gif" width="700" height="400" />
