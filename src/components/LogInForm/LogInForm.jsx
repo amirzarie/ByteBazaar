@@ -31,7 +31,7 @@ export default function LogInForm({ setUser }) {
           position: "absolute",
           top: "50%",
           left: "50%",
-          transform: "translate(30%, 36%) scale(1.4)",
+          transform: "translate(30%, 36%)",
         }}
       >
         <div className="form-container">
