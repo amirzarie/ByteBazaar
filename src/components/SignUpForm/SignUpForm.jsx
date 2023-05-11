@@ -44,7 +44,7 @@ export default class SignUpForm extends Component {
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-130%, 30%) scale(1.4)",
+            transform: "translate(-130%, 30%)",
           }}
         >
           <div className="form-container">
