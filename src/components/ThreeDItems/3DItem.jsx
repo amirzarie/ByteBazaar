@@ -74,7 +74,7 @@ export default function VintageCamera({ item, user }) {
               padding: "20px",
               border: "1px solid black",
               width: "50vw",
-              height: "50vh",
+              height: "auto",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
